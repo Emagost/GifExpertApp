@@ -1,4 +1,5 @@
 {
+  "homepage": "https://emagost.github.io/GifExpertApp/",
   "name": "gif-expert-app",
   "version": "0.1.0",
   "private": true,
@@ -12,12 +13,12 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build": "react-scripts build",
-    "build-and-docs": "react-scripts build && node create-docs.js",
-    "homepage" : "."
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [

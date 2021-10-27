@@ -24,6 +24,7 @@ export const AddCategory = ({ setCategories }) => {
         <form onSubmit={handleSubmit}>
             <input
                 type="text"
+                placeholder="Search gifs"
                 value = {inputValue}
                 onChange = { handleInputChange }
             />

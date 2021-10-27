@@ -4,14 +4,15 @@ import { GifGrid } from './GifGrid';
 
 export const GifExpertApp = () => {
     
-    const [categories, setCategories] = useState(['The Office']);
+    const [categories, setCategories] = useState(['']);
 
     return (
         <>
-            <h2>GifExpertApp</h2>
+            <h1>Gif App</h1>
+            <h3>Look for any GIF on our website</h3>
 
             <AddCategory setCategories={ setCategories } />
-
+            
             <hr/>
 
             <ol>
@@ -23,7 +24,8 @@ export const GifExpertApp = () => {
                         />
                     ))
                 }
-            </ol>   
+            </ol>
+            <a href="https://github.com/Emagost/GifExpertApp">Github</a>
         </>
     );
 };
